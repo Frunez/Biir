@@ -6,28 +6,39 @@
 //
 
 import XCTest
+import ComposableArchitecture
 @testable import Biir
 
 class BiirTests: XCTestCase {
+    private let scheduler = DispatchQueue.testScheduler
 
-    override func setUpWithError() throws {
-        // Put setup code here. This method is called before the invocation of each test method in the class.
+    func test_reducer_next_page() {
+        let store = TestStore(
+            initialState: BeerListState(),
+            reducer: beerListReducer,
+            environment: BeerListEnvironment.mock(
+                mainQueue: scheduler.eraseToAnyScheduler(),
+                beerClient: .happyPath,
+                beerListItemEnvironment: .happyPath(mainQueue: scheduler.eraseToAnyScheduler()))
+        )
+
+        store.assert(
+            .send(.getNextPage) {
+                $0.currentPage = 2
+                $0.requestInFlight = true
+            },
+            .do { self.scheduler.advance() },
+            .receive(.beersResponse(.success(
+                BeersData(
+                    currentPage: 1,
+                    numberOfPages: 3,
+                    totalResults: 0,
+                    data: []
+                )
+            ))) {
+                $0.lastPage = 3
+                $0.requestInFlight = false
+            }
+        )
     }
-
-    override func tearDownWithError() throws {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
-    }
-
-    func testExample() throws {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
-    }
-
-    func testPerformanceExample() throws {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
-        }
-    }
-
 }

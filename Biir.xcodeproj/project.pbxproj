@@ -3,18 +3,32 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		010F014025EFD5A5007574EA /* BeerListItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 010F013F25EFD5A5007574EA /* BeerListItemView.swift */; };
+		010F014825EFD5EA007574EA /* BeerListItemAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 010F014725EFD5EA007574EA /* BeerListItemAction.swift */; };
+		010F014D25EFD60D007574EA /* beerListItemReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 010F014C25EFD60D007574EA /* beerListItemReducer.swift */; };
+		010F015525EFEC1D007574EA /* Beer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 010F015425EFEC1C007574EA /* Beer.swift */; };
+		010F015D25EFF114007574EA /* BeerListItemEnvironment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 010F015C25EFF114007574EA /* BeerListItemEnvironment.swift */; };
+		010F016625EFFDA9007574EA /* BeerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 010F016525EFFDA9007574EA /* BeerView.swift */; };
+		0113DE4425F507F6006D5E55 /* BeerEnvironment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0113DE4325F507F6006D5E55 /* BeerEnvironment.swift */; };
+		0113DE4C25F50837006D5E55 /* BeerAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0113DE4B25F50837006D5E55 /* BeerAction.swift */; };
+		0113DE5125F5085D006D5E55 /* beerReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0113DE5025F5085D006D5E55 /* beerReducer.swift */; };
+		016C726825EEC4E3009729F7 /* ComposableArchitecture in Frameworks */ = {isa = PBXBuildFile; productRef = 016C726725EEC4E3009729F7 /* ComposableArchitecture */; };
+		016C726E25EECE77009729F7 /* BeerListState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 016C726D25EECE77009729F7 /* BeerListState.swift */; };
+		016C727625EECEAE009729F7 /* BeerData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 016C727525EECEAE009729F7 /* BeerData.swift */; };
+		016C727C25EECF53009729F7 /* beerListReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 016C727B25EECF53009729F7 /* beerListReducer.swift */; };
+		016C728725EED132009729F7 /* BeerListAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 016C728625EED132009729F7 /* BeerListAction.swift */; };
+		016C728C25EED18D009729F7 /* BeerListEnvironment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 016C728B25EED18D009729F7 /* BeerListEnvironment.swift */; };
+		016C729225EED569009729F7 /* BeerClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 016C729125EED569009729F7 /* BeerClient.swift */; };
 		01833EDB25ED26F10050FBD2 /* BiirApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01833EDA25ED26F10050FBD2 /* BiirApp.swift */; };
-		01833EDD25ED26F10050FBD2 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01833EDC25ED26F10050FBD2 /* ContentView.swift */; };
 		01833EDF25ED26F10050FBD2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 01833EDE25ED26F10050FBD2 /* Assets.xcassets */; };
 		01833EE225ED26F10050FBD2 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 01833EE125ED26F10050FBD2 /* Preview Assets.xcassets */; };
-		01833EE425ED26F10050FBD2 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01833EE325ED26F10050FBD2 /* Persistence.swift */; };
-		01833EE725ED26F10050FBD2 /* Biir.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 01833EE525ED26F10050FBD2 /* Biir.xcdatamodeld */; };
 		01833EF225ED26F20050FBD2 /* BiirTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01833EF125ED26F20050FBD2 /* BiirTests.swift */; };
-		01833EFD25ED26F20050FBD2 /* BiirUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01833EFC25ED26F20050FBD2 /* BiirUITests.swift */; };
+		01EF909125F13BBC000A1624 /* calculateIBU.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01EF909025F13BBC000A1624 /* calculateIBU.swift */; };
+		01EF909D25F154C2000A1624 /* BeerListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01EF909C25F154C2000A1624 /* BeerListView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -25,30 +39,34 @@
 			remoteGlobalIDString = 01833ED625ED26F10050FBD2;
 			remoteInfo = Biir;
 		};
-		01833EF925ED26F20050FBD2 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 01833ECF25ED26F10050FBD2 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 01833ED625ED26F10050FBD2;
-			remoteInfo = Biir;
-		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		010F013F25EFD5A5007574EA /* BeerListItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeerListItemView.swift; sourceTree = "<group>"; };
+		010F014725EFD5EA007574EA /* BeerListItemAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeerListItemAction.swift; sourceTree = "<group>"; };
+		010F014C25EFD60D007574EA /* beerListItemReducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = beerListItemReducer.swift; sourceTree = "<group>"; };
+		010F015425EFEC1C007574EA /* Beer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Beer.swift; sourceTree = "<group>"; };
+		010F015C25EFF114007574EA /* BeerListItemEnvironment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeerListItemEnvironment.swift; sourceTree = "<group>"; };
+		010F016525EFFDA9007574EA /* BeerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeerView.swift; sourceTree = "<group>"; };
+		0113DE4325F507F6006D5E55 /* BeerEnvironment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeerEnvironment.swift; sourceTree = "<group>"; };
+		0113DE4B25F50837006D5E55 /* BeerAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeerAction.swift; sourceTree = "<group>"; };
+		0113DE5025F5085D006D5E55 /* beerReducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = beerReducer.swift; sourceTree = "<group>"; };
+		016C726D25EECE77009729F7 /* BeerListState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeerListState.swift; sourceTree = "<group>"; };
+		016C727525EECEAE009729F7 /* BeerData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeerData.swift; sourceTree = "<group>"; };
+		016C727B25EECF53009729F7 /* beerListReducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = beerListReducer.swift; sourceTree = "<group>"; };
+		016C728625EED132009729F7 /* BeerListAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeerListAction.swift; sourceTree = "<group>"; };
+		016C728B25EED18D009729F7 /* BeerListEnvironment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeerListEnvironment.swift; sourceTree = "<group>"; };
+		016C729125EED569009729F7 /* BeerClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeerClient.swift; sourceTree = "<group>"; };
 		01833ED725ED26F10050FBD2 /* Biir.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Biir.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		01833EDA25ED26F10050FBD2 /* BiirApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BiirApp.swift; sourceTree = "<group>"; };
-		01833EDC25ED26F10050FBD2 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		01833EDE25ED26F10050FBD2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		01833EE125ED26F10050FBD2 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		01833EE325ED26F10050FBD2 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
-		01833EE625ED26F10050FBD2 /* Biir.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Biir.xcdatamodel; sourceTree = "<group>"; };
 		01833EE825ED26F10050FBD2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		01833EED25ED26F20050FBD2 /* BiirTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BiirTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		01833EF125ED26F20050FBD2 /* BiirTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BiirTests.swift; sourceTree = "<group>"; };
 		01833EF325ED26F20050FBD2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		01833EF825ED26F20050FBD2 /* BiirUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BiirUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		01833EFC25ED26F20050FBD2 /* BiirUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BiirUITests.swift; sourceTree = "<group>"; };
-		01833EFE25ED26F20050FBD2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		01EF909025F13BBC000A1624 /* calculateIBU.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = calculateIBU.swift; sourceTree = "<group>"; };
+		01EF909C25F154C2000A1624 /* BeerListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeerListView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +74,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				016C726825EEC4E3009729F7 /* ComposableArchitecture in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -66,22 +85,83 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		01833EF525ED26F20050FBD2 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		010F013D25EFD56B007574EA /* BeerListItem */ = {
+			isa = PBXGroup;
+			children = (
+				010F013E25EFD583007574EA /* Core */,
+				010F013F25EFD5A5007574EA /* BeerListItemView.swift */,
+			);
+			path = BeerListItem;
+			sourceTree = "<group>";
+		};
+		010F013E25EFD583007574EA /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				010F014725EFD5EA007574EA /* BeerListItemAction.swift */,
+				010F014C25EFD60D007574EA /* beerListItemReducer.swift */,
+				010F015C25EFF114007574EA /* BeerListItemEnvironment.swift */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		010F016425EFFD99007574EA /* Beer */ = {
+			isa = PBXGroup;
+			children = (
+				010F016A25EFFDB1007574EA /* core */,
+				010F016525EFFDA9007574EA /* BeerView.swift */,
+			);
+			path = Beer;
+			sourceTree = "<group>";
+		};
+		010F016A25EFFDB1007574EA /* core */ = {
+			isa = PBXGroup;
+			children = (
+				0113DE4B25F50837006D5E55 /* BeerAction.swift */,
+				0113DE5025F5085D006D5E55 /* beerReducer.swift */,
+				0113DE4325F507F6006D5E55 /* BeerEnvironment.swift */,
+			);
+			path = core;
+			sourceTree = "<group>";
+		};
+		016C726C25EECE63009729F7 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				01EF908F25F13B3B000A1624 /* Helpers */,
+				016C729025EED552009729F7 /* Client */,
+				016C727A25EECEEF009729F7 /* Model */,
+				016C726D25EECE77009729F7 /* BeerListState.swift */,
+				016C728625EED132009729F7 /* BeerListAction.swift */,
+				016C727B25EECF53009729F7 /* beerListReducer.swift */,
+				016C728B25EED18D009729F7 /* BeerListEnvironment.swift */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		016C727A25EECEEF009729F7 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				010F015425EFEC1C007574EA /* Beer.swift */,
+				016C727525EECEAE009729F7 /* BeerData.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		016C729025EED552009729F7 /* Client */ = {
+			isa = PBXGroup;
+			children = (
+				016C729125EED569009729F7 /* BeerClient.swift */,
+			);
+			path = Client;
+			sourceTree = "<group>";
+		};
 		01833ECE25ED26F10050FBD2 = {
 			isa = PBXGroup;
 			children = (
 				01833ED925ED26F10050FBD2 /* Biir */,
 				01833EF025ED26F20050FBD2 /* BiirTests */,
-				01833EFB25ED26F20050FBD2 /* BiirUITests */,
 				01833ED825ED26F10050FBD2 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -91,7 +171,6 @@
 			children = (
 				01833ED725ED26F10050FBD2 /* Biir.app */,
 				01833EED25ED26F20050FBD2 /* BiirTests.xctest */,
-				01833EF825ED26F20050FBD2 /* BiirUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -99,12 +178,12 @@
 		01833ED925ED26F10050FBD2 /* Biir */ = {
 			isa = PBXGroup;
 			children = (
+				01EF909B25F154A3000A1624 /* BeerList */,
+				010F016425EFFD99007574EA /* Beer */,
+				010F013D25EFD56B007574EA /* BeerListItem */,
 				01833EDA25ED26F10050FBD2 /* BiirApp.swift */,
-				01833EDC25ED26F10050FBD2 /* ContentView.swift */,
 				01833EDE25ED26F10050FBD2 /* Assets.xcassets */,
-				01833EE325ED26F10050FBD2 /* Persistence.swift */,
 				01833EE825ED26F10050FBD2 /* Info.plist */,
-				01833EE525ED26F10050FBD2 /* Biir.xcdatamodeld */,
 				01833EE025ED26F10050FBD2 /* Preview Content */,
 			);
 			path = Biir;
@@ -127,13 +206,21 @@
 			path = BiirTests;
 			sourceTree = "<group>";
 		};
-		01833EFB25ED26F20050FBD2 /* BiirUITests */ = {
+		01EF908F25F13B3B000A1624 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
-				01833EFC25ED26F20050FBD2 /* BiirUITests.swift */,
-				01833EFE25ED26F20050FBD2 /* Info.plist */,
+				01EF909025F13BBC000A1624 /* calculateIBU.swift */,
 			);
-			path = BiirUITests;
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		01EF909B25F154A3000A1624 /* BeerList */ = {
+			isa = PBXGroup;
+			children = (
+				016C726C25EECE63009729F7 /* Core */,
+				01EF909C25F154C2000A1624 /* BeerListView.swift */,
+			);
+			path = BeerList;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -152,6 +239,9 @@
 			dependencies = (
 			);
 			name = Biir;
+			packageProductDependencies = (
+				016C726725EEC4E3009729F7 /* ComposableArchitecture */,
+			);
 			productName = Biir;
 			productReference = 01833ED725ED26F10050FBD2 /* Biir.app */;
 			productType = "com.apple.product-type.application";
@@ -174,24 +264,6 @@
 			productReference = 01833EED25ED26F20050FBD2 /* BiirTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		01833EF725ED26F20050FBD2 /* BiirUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 01833F0725ED26F20050FBD2 /* Build configuration list for PBXNativeTarget "BiirUITests" */;
-			buildPhases = (
-				01833EF425ED26F20050FBD2 /* Sources */,
-				01833EF525ED26F20050FBD2 /* Frameworks */,
-				01833EF625ED26F20050FBD2 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				01833EFA25ED26F20050FBD2 /* PBXTargetDependency */,
-			);
-			name = BiirUITests;
-			productName = BiirUITests;
-			productReference = 01833EF825ED26F20050FBD2 /* BiirUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -208,10 +280,6 @@
 						CreatedOnToolsVersion = 12.4;
 						TestTargetID = 01833ED625ED26F10050FBD2;
 					};
-					01833EF725ED26F20050FBD2 = {
-						CreatedOnToolsVersion = 12.4;
-						TestTargetID = 01833ED625ED26F10050FBD2;
-					};
 				};
 			};
 			buildConfigurationList = 01833ED225ED26F10050FBD2 /* Build configuration list for PBXProject "Biir" */;
@@ -223,13 +291,15 @@
 				Base,
 			);
 			mainGroup = 01833ECE25ED26F10050FBD2;
+			packageReferences = (
+				016C726625EEC4E3009729F7 /* XCRemoteSwiftPackageReference "swift-composable-architecture" */,
+			);
 			productRefGroup = 01833ED825ED26F10050FBD2 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				01833ED625ED26F10050FBD2 /* Biir */,
 				01833EEC25ED26F20050FBD2 /* BiirTests */,
-				01833EF725ED26F20050FBD2 /* BiirUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -251,13 +321,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		01833EF625ED26F20050FBD2 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -265,10 +328,24 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				01833EE425ED26F10050FBD2 /* Persistence.swift in Sources */,
-				01833EDD25ED26F10050FBD2 /* ContentView.swift in Sources */,
+				016C729225EED569009729F7 /* BeerClient.swift in Sources */,
+				016C726E25EECE77009729F7 /* BeerListState.swift in Sources */,
+				01EF909D25F154C2000A1624 /* BeerListView.swift in Sources */,
+				0113DE5125F5085D006D5E55 /* beerReducer.swift in Sources */,
+				0113DE4425F507F6006D5E55 /* BeerEnvironment.swift in Sources */,
+				016C727C25EECF53009729F7 /* beerListReducer.swift in Sources */,
+				01EF909125F13BBC000A1624 /* calculateIBU.swift in Sources */,
+				010F015525EFEC1D007574EA /* Beer.swift in Sources */,
+				016C728725EED132009729F7 /* BeerListAction.swift in Sources */,
 				01833EDB25ED26F10050FBD2 /* BiirApp.swift in Sources */,
-				01833EE725ED26F10050FBD2 /* Biir.xcdatamodeld in Sources */,
+				010F015D25EFF114007574EA /* BeerListItemEnvironment.swift in Sources */,
+				010F014025EFD5A5007574EA /* BeerListItemView.swift in Sources */,
+				016C727625EECEAE009729F7 /* BeerData.swift in Sources */,
+				010F016625EFFDA9007574EA /* BeerView.swift in Sources */,
+				016C728C25EED18D009729F7 /* BeerListEnvironment.swift in Sources */,
+				010F014825EFD5EA007574EA /* BeerListItemAction.swift in Sources */,
+				010F014D25EFD60D007574EA /* beerListItemReducer.swift in Sources */,
+				0113DE4C25F50837006D5E55 /* BeerAction.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -280,14 +357,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		01833EF425ED26F20050FBD2 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				01833EFD25ED26F20050FBD2 /* BiirUITests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -295,11 +364,6 @@
 			isa = PBXTargetDependency;
 			target = 01833ED625ED26F10050FBD2 /* Biir */;
 			targetProxy = 01833EEE25ED26F20050FBD2 /* PBXContainerItemProxy */;
-		};
-		01833EFA25ED26F20050FBD2 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 01833ED625ED26F10050FBD2 /* Biir */;
-			targetProxy = 01833EF925ED26F20050FBD2 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -508,46 +572,6 @@
 			};
 			name = Release;
 		};
-		01833F0825ED26F20050FBD2 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = A9MY2568LT;
-				INFOPLIST_FILE = BiirUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = Frank.BiirUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = Biir;
-			};
-			name = Debug;
-		};
-		01833F0925ED26F20050FBD2 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = A9MY2568LT;
-				INFOPLIST_FILE = BiirUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = Frank.BiirUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = Biir;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -578,29 +602,26 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		01833F0725ED26F20050FBD2 /* Build configuration list for PBXNativeTarget "BiirUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				01833F0825ED26F20050FBD2 /* Debug */,
-				01833F0925ED26F20050FBD2 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 /* End XCConfigurationList section */
 
-/* Begin XCVersionGroup section */
-		01833EE525ED26F10050FBD2 /* Biir.xcdatamodeld */ = {
-			isa = XCVersionGroup;
-			children = (
-				01833EE625ED26F10050FBD2 /* Biir.xcdatamodel */,
-			);
-			currentVersion = 01833EE625ED26F10050FBD2 /* Biir.xcdatamodel */;
-			path = Biir.xcdatamodeld;
-			sourceTree = "<group>";
-			versionGroupType = wrapper.xcdatamodel;
+/* Begin XCRemoteSwiftPackageReference section */
+		016C726625EEC4E3009729F7 /* XCRemoteSwiftPackageReference "swift-composable-architecture" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/pointfreeco/swift-composable-architecture";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.15.0;
+			};
 		};
-/* End XCVersionGroup section */
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		016C726725EEC4E3009729F7 /* ComposableArchitecture */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 016C726625EEC4E3009729F7 /* XCRemoteSwiftPackageReference "swift-composable-architecture" */;
+			productName = ComposableArchitecture;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 01833ECF25ED26F10050FBD2 /* Project object */;
 }
