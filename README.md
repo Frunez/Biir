@@ -17,7 +17,7 @@ Dependencies:
 - [Composable Architecture](https://github.com/pointfreeco/swift-composable-architecture)
 
 ## Task Steps
-Thid exercise took me ~8 hours to complete in total and was done in the following order:
+This exercise took me ~8 hours to complete in total and was done in the following order:
 - Create account and API key on [BreweryDB](https://www.brewerydb.com/)
 - Test parameters of the API in browser to see the data and structure
 - Create a new empty project in Xcode
