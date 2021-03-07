@@ -33,8 +33,16 @@ struct BeerListItem: View {
                             .opacity(0.1)
                             .frame(width: 40, height: 40, alignment: .center)
                     }
-                    Text(viewStore.name)
-                        .fontWeight(.bold)
+
+                    VStack(alignment: .leading) {
+                        Text(viewStore.name)
+                            .fontWeight(.bold)
+
+                        if viewStore.category != nil {
+                            Text(viewStore.category!)
+                                .font(.caption)
+                        }
+                    }
                 }
                 .onAppear {
                     viewStore.send(.fetchBeerIcon(viewStore.iconUrl))
